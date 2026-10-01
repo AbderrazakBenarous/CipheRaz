@@ -1,0 +1,360 @@
+/* CipheRaz Modern Cybersecurity Laboratory Theme */
+/* Developed by Abderrazak BENAROUS */
+
+.root {
+    -color-bg-base: #0B0F19;
+    -color-bg-surface: #111827;
+    -color-bg-elevated: #1F2937;
+    -color-bg-card: #182234;
+    -color-bg-hover: #223046;
+    -color-border: #2D3748;
+    -color-border-bright: #4B5563;
+    -color-accent-primary: #38BDF8;
+    -color-accent-glow: rgba(56, 189, 248, 0.2);
+    -color-accent-secondary: #818CF8;
+    -color-text-primary: #F9FAFB;
+    -color-text-secondary: #9CA3AF;
+    -color-text-muted: #6B7280;
+    -color-success: #10B981;
+    -color-warning: #F59E0B;
+    -color-danger: #EF4444;
+    -color-info: #6366F1;
+
+    -fx-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -fx-background-color: -color-bg-base;
+    -fx-text-fill: -color-text-primary;
+}
+
+/* Base Containers */
+.main-stage {
+    -fx-background-color: -color-bg-base;
+}
+
+.content-area {
+    -fx-background-color: -color-bg-base;
+    -fx-padding: 24;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    -fx-background-color: -color-bg-surface;
+    -fx-border-color: transparent -color-border transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-pref-width: 250;
+    -fx-min-width: 250;
+    -fx-padding: 16 12 16 12;
+}
+
+.brand-box {
+    -fx-padding: 8 12 20 12;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 10;
+}
+
+.brand-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent-primary;
+}
+
+.brand-badge {
+    -fx-background-color: rgba(56, 189, 248, 0.15);
+    -fx-border-color: -color-accent-primary;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 2 6 2 6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent-primary;
+}
+
+.nav-section-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-muted;
+    -fx-padding: 12 8 4 8;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-secondary;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 12;
+}
+
+.nav-button:hover {
+    -fx-background-color: -color-bg-hover;
+    -fx-text-fill: -color-text-primary;
+}
+
+.nav-button.active {
+    -fx-background-color: rgba(56, 189, 248, 0.15);
+    -fx-text-fill: -color-accent-primary;
+    -fx-border-color: transparent transparent transparent -color-accent-primary;
+    -fx-border-width: 0 0 0 3;
+    -fx-font-weight: bold;
+}
+
+/* Header Bar */
+.header-bar {
+    -fx-background-color: -color-bg-surface;
+    -fx-border-color: transparent transparent -color-border transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 12 24 12 24;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 16;
+}
+
+.breadcrumb-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: -color-text-secondary;
+}
+
+.breadcrumb-current {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-primary;
+}
+
+.search-field {
+    -fx-background-color: -color-bg-elevated;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: -color-text-primary;
+    -fx-prompt-text-fill: -color-text-muted;
+    -fx-padding: 8 14 8 14;
+    -fx-font-size: 13px;
+    -fx-pref-width: 280;
+}
+
+.search-field:focused {
+    -fx-border-color: -color-accent-primary;
+    -fx-background-color: -color-bg-base;
+}
+
+/* Status / Footer Bar */
+.status-bar {
+    -fx-background-color: -color-bg-surface;
+    -fx-border-color: -color-border transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 6 16 6 16;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 16;
+    -fx-min-height: 28;
+}
+
+.status-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: -color-text-muted;
+}
+
+.author-signature {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent-secondary;
+}
+
+.status-dot-active {
+    -fx-fill: -color-success;
+}
+
+/* Cards & Laboratory Tiles */
+.lab-card {
+    -fx-background-color: -color-bg-card;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 4);
+}
+
+.lab-card:hover {
+    -fx-background-color: -color-bg-hover;
+    -fx-border-color: -color-accent-primary;
+    -fx-effect: dropshadow(gaussian, rgba(56, 189, 248, 0.25), 16, 0, 0, 4);
+}
+
+.lab-card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-primary;
+}
+
+.lab-card-desc {
+    -fx-font-size: 13px;
+    -fx-text-fill: -color-text-secondary;
+    -fx-wrap-text: true;
+}
+
+.lab-card-tag {
+    -fx-background-color: rgba(129, 140, 248, 0.15);
+    -fx-text-fill: -color-accent-secondary;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 4;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* Security Notice Banner */
+.security-banner {
+    -fx-padding: 14 18 14 18;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-spacing: 12;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.security-banner-info {
+    -fx-background-color: rgba(99, 102, 241, 0.12);
+    -fx-border-color: -color-info;
+    -fx-border-width: 1;
+}
+
+.security-banner-warning {
+    -fx-background-color: rgba(245, 158, 11, 0.12);
+    -fx-border-color: -color-warning;
+    -fx-border-width: 1;
+}
+
+.security-banner-danger {
+    -fx-background-color: rgba(239, 68, 68, 0.12);
+    -fx-border-color: -color-danger;
+    -fx-border-width: 1;
+}
+
+.security-banner-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.security-banner-desc {
+    -fx-font-size: 12px;
+    -fx-text-fill: -color-text-secondary;
+    -fx-wrap-text: true;
+}
+
+/* Hero Section */
+.hero-box {
+    -fx-background-color: linear-gradient(to right, #111827, #1E1B4B);
+    -fx-border-color: -color-border;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 24 28 24 28;
+    -fx-spacing: 12;
+}
+
+.hero-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-primary;
+}
+
+.hero-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: -color-text-secondary;
+    -fx-wrap-text: true;
+}
+
+/* Buttons */
+.btn-primary {
+    -fx-background-color: -color-accent-primary;
+    -fx-text-fill: #0B0F19;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 8 18 8 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #7dd3fc;
+}
+
+.btn-secondary {
+    -fx-background-color: -color-bg-elevated;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: -color-text-primary;
+    -fx-font-size: 13px;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: -color-bg-hover;
+    -fx-border-color: -color-accent-primary;
+}
+
+/* Metric / Stat Box */
+.stat-box {
+    -fx-background-color: -color-bg-card;
+    -fx-border-color: -color-border;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 16;
+    -fx-spacing: 6;
+}
+
+.stat-number {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent-primary;
+}
+
+.stat-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: -color-text-muted;
+}
+
+/* ScrollBars */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: -color-border;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: -color-accent-primary;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* Dialog Styles */
+.dialog-pane {
+    -fx-background-color: -color-bg-surface;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.dialog-header {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-accent-primary;
+}
+
+.dialog-body {
+    -fx-font-size: 13px;
+    -fx-text-fill: -color-text-secondary;
+}
